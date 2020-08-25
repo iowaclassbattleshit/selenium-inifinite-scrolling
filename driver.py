@@ -12,7 +12,7 @@ proxy = Proxy({
     'httpProxy': proxy_address,
 })
 
-gecko = "/home/ubuntu/Desktop/jibba/geckodriver"
+gecko = "./geckodriver"
 firefox = "/usr/bin/firefox"
 
 firefox_binary = FirefoxBinary(firefox)
