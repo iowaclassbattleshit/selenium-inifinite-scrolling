@@ -13,9 +13,9 @@ proxy = Proxy({
 })
 
 gecko = "/home/ubuntu/Desktop/jibba/geckodriver"
-tor = "/usr/bin/firefox"
+firefox = "/usr/bin/firefox"
 
-firefox_binary = FirefoxBinary(tor)
+firefox_binary = FirefoxBinary(firefox)
 
 def callback(driver):
     driver.quit()
@@ -25,5 +25,6 @@ def driver(binary=None, proxy=None):
 
 if __name__ == "__main__":
     driver = driver(binary=firefox_binary, proxy=proxy)
-    driver.get("https://www.reddit.com/search/?q=apt34")
+    # driver.get("https://www.reddit.com/search/?q=apt34")
+    driver.get("https://www.9gag.com")
     scroll(driver, 1, 10, callback)
